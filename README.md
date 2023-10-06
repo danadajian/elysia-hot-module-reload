@@ -10,7 +10,7 @@ import { hotModuleReload, HotModuleReload } from "elysia-hot-module-reload";
 import { renderToReadableStream } from "react-dom/server";
 
 function App() {
-    return <div>Hello world!</div>;
+  return <div>Hello world!</div>;
 }
 
 const app = new Elysia()
@@ -19,7 +19,7 @@ const app = new Elysia()
       <>
         <App />
         <HotModuleReload />
-      </>
+      </>,
     );
     return new Response(stream, {
       headers: { "Content-Type": "text/html" },
@@ -29,18 +29,19 @@ const app = new Elysia()
   .listen(3000);
 
 console.info(
-    `App is running at http://${app.server?.hostname}:${app.server?.port}`,
+  `App is running at http://${app.server?.hostname}:${app.server?.port}`,
 );
 ```
 
 ### Custom Websocket Path
+
 ```tsx
 import Elysia from "elysia";
 import { hotModuleReload, HotModuleReload } from "elysia-hot-module-reload";
 import { renderToReadableStream } from "react-dom/server";
 
 function App() {
-    return <div>Hello world!</div>;
+  return <div>Hello world!</div>;
 }
 
 const customWebSocketPath = "my-custom-path";
@@ -51,7 +52,7 @@ const app = new Elysia()
       <>
         <App />
         <HotModuleReload webSocketPath={customWebSocketPath} />
-      </>
+      </>,
     );
     return new Response(stream, {
       headers: { "Content-Type": "text/html" },
@@ -61,7 +62,7 @@ const app = new Elysia()
   .listen(3000);
 
 console.info(
-    `App is running at http://${app.server?.hostname}:${app.server?.port}`,
+  `App is running at http://${app.server?.hostname}:${app.server?.port}`,
 );
 ```
 

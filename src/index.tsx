@@ -16,7 +16,9 @@ function hotReload() {
 hotReload();
 `;
 
-export const HotModuleReload = ({ webSocketPath = defaultWebSocketPath } = {}) => (
+export const HotModuleReload = ({
+  webSocketPath = defaultWebSocketPath,
+} = {}) => (
   <script
     type="text/javascript"
     dangerouslySetInnerHTML={{
@@ -29,7 +31,9 @@ declare global {
   var ws: typeof Elysia.arguments;
 }
 
-export const hotModuleReload = ({ webSocketPath = defaultWebSocketPath } = {}) => {
+export const hotModuleReload = ({
+  webSocketPath = defaultWebSocketPath,
+} = {}) => {
   global.ws?.send(reloadMessage);
 
   return new Elysia({
