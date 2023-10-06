@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "./src/dist",
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "moduleDetection": "force",
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "include": ["src/index.tsx"],
+  "exclude": ["example", "node_modules"]
+}

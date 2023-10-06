@@ -1,0 +1,18 @@
+{
+  "name": "elysia-hot-module-reload",
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danadajian/elysia-hot-module-reload.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danadajian/elysia-hot-module-reload/issues"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "elysia": ">=0.7.15"
+  }
+}
