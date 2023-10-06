@@ -3,6 +3,7 @@
   "files": [
     "dist"
   ],
+  "main": "./dist/index.jsx",
   "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
